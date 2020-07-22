@@ -54,3 +54,13 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:trigger_dice_roll
+- roll a d20
+- roll a twenty sided die
+- throw a dice
+
+
+## intent:play_music
+- play some [rock](music genre)
+- let's hear some [classical music](music_genre)

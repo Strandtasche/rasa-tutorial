@@ -22,10 +22,17 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "I'll be back"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_curse:
+  - text: "ah god damn. Not like this"
+
+actions:
+- action_hello_world
+- action_roll_dice
 
 session_config:
   session_expiration_time: 60
