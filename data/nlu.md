@@ -6,6 +6,10 @@
 - good evening
 - hey there
 
+## intent:authenticate
+- when does the narwhal bacon
+- i love you shoe laces
+
 ## intent:goodbye
 - bye
 - goodbye

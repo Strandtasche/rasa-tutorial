@@ -29,3 +29,12 @@
 ## bot challenge
 * bot_challenge
   - utter_iamabot
+
+## action: hello world
+* authenticate
+  - action_hello_world
+
+
+## roll a d20
+* trigger_dice_roll
+  - action_roll_dice

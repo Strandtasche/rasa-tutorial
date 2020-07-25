@@ -6,6 +6,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - authenticate
+  - trigger_dice_roll
 
 responses:
   utter_greet:
