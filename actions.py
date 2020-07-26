@@ -23,12 +23,29 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text="Hello World!")
+        ds = tracker.get_slot("dice_sides")
+        dispatcher.utter_message(text=f"Hello World! selected Dice size: {ds}")
 
         return []
 
 
 class ActionRollDice(Action):
+
+    def name(self) -> Text:
+        return "action_roll_dice"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        result = random.randint(1,20)
+        dispatcher.utter_message(text=f"you rolled a {result}")
+
+        return []
+
+
+
+class ActionRollDiceSized(Action):
 
     def name(self) -> Text:
         return "action_roll_dice"

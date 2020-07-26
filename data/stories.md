@@ -31,8 +31,9 @@
   - utter_iamabot
 
 ## action: hello world
-* authenticate
-  - action_hello_world
+* radiant
+  - utter_ask_color
+
 
 
 ## roll a d20

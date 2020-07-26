@@ -8,6 +8,7 @@ intents:
   - bot_challenge
   - authenticate
   - trigger_dice_roll
+  - radiant
 
 responses:
   utter_greet:
@@ -32,9 +33,35 @@ responses:
   utter_curse:
   - text: "ah god damn. Not like this"
 
+  utter_ask_color:
+  - text: "what dice would you like?"
+    buttons:
+    - title: "d4"
+      payload: '/choose{"dice_sides": "d4"}'
+    - title: "d6"
+      payload: '/choose{"dice_sides": "d6"}'
+    - title: "d20"
+      payload: '/choose{"dice_sides": "d20"}'
+
 actions:
 - action_hello_world
 - action_roll_dice
+
+entities:
+- dice_sides
+- dice_types
+
+slots:
+  dice_sides:
+    type: text
+    initial_value: "human"
+
+  dice_types:
+    type: categorical
+    values:
+    - d4
+    - d6
+    - d20
 
 session_config:
   session_expiration_time: 60

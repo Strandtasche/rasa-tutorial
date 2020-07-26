@@ -7,7 +7,7 @@
 - hey there
 
 ## intent:authenticate
-- when does the narwhal bacon
+- when does the [blank](dice_sides) bacon
 - i love you shoe laces
 
 ## intent:goodbye
@@ -64,7 +64,11 @@
 - roll a twenty sided die
 - throw a dice
 
-
 ## intent:play_music
 - play some [rock](music genre)
 - let's hear some [classical music](music_genre)
+
+## intent:radiant
+- journey before destination
+- way before target
+- you gotta run before you crawl
