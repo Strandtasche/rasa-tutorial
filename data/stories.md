@@ -1,26 +1,6 @@
 ## happy path
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
-
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
+  - action_hello_world
 
 ## say goodbye
 * goodbye
@@ -33,8 +13,6 @@
 ## action: hello world
 * radiant
   - utter_ask_color
-
-
 
 ## roll a d20
 * trigger_dice_roll

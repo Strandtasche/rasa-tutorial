@@ -54,7 +54,11 @@ class ActionRollDiceSized(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        result = random.randint(1,20)
-        dispatcher.utter_message(text=f"you rolled a {result}")
+        ds = tracker.get_slot("dice_sides")
+        if ds != "human":
+            result = random.randint(1,int(ds))
+            dispatcher.utter_message(text=f"you rolled a {result} out of {ds}")
+        else:
+            dispatcher.utter_message(text="no value set yet :(")
 
         return []

@@ -64,11 +64,11 @@
 - roll a twenty sided die
 - throw a dice
 
-## intent:play_music
-- play some [rock](music genre)
-- let's hear some [classical music](music_genre)
-
 ## intent:radiant
 - journey before destination
 - way before target
 - you gotta run before you crawl
+
+## intent:choose
+- get me a [d4](dice_sides)
+- go and fet a [d6](dice_sides)
