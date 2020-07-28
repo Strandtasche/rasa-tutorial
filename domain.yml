@@ -47,14 +47,19 @@ responses:
   utter_summons:
   - text: "i call you here {dice_sides}, so  be bound"
 
+  utter_abort:
+  - text: "still has the default set - please change dice_sides"
+
 
 actions:
 - action_hello_world
 - action_roll_dice
+- action_roll_dice_sized
 
 entities:
 - dice_sides
 - dice_types
+- character_name
 
 slots:
   dice_sides:
@@ -67,6 +72,9 @@ slots:
     - d4
     - d6
     - d20
+
+  character_name:
+      type: unfeaturized
 
 session_config:
   session_expiration_time: 60
