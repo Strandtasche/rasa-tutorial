@@ -72,3 +72,19 @@
 ## intent:choose
 - get me a [d4](dice_sides)
 - go and fet a [d6](dice_sides)
+
+
+## intent:full_check
+- I want to make a check
+- let's do a [constitution](attribute) check
+- [Gunther](character_name), do a [strength](attribute) check
+- ok, roll for [dexterity](attribute)
+- mh, maybe roll something like [wisdom](attribute)
+- let [Karl](character_name) roll some [strength](attribute)
+
+
+## intent:confirmation
+- yes
+- ack
+- affirmative
+- confirmed

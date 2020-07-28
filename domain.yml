@@ -10,6 +10,8 @@ intents:
   - trigger_dice_roll
   - radiant
   - choose
+  - full_check
+  - confirmation
 
 responses:
   utter_greet:
@@ -21,6 +23,9 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you?"
+
+  utter_question:
+  - text: "what do you want to do?"
 
   utter_happy:
   - text: "Great, carry on!"
@@ -50,11 +55,15 @@ responses:
   utter_abort:
   - text: "still has the default set - please change dice_sides"
 
+  utter_request_confirmation:
+  - text: "requesting confirmation"
+
 
 actions:
 - action_hello_world
 - action_roll_dice
 - action_roll_dice_sized
+- action_roll_check
 
 entities:
 - dice_sides
@@ -74,8 +83,21 @@ slots:
     - d20
 
   character_name:
-      type: unfeaturized
+    type: unfeaturized
+
+  attribute:
+    type: categorical
+    values:
+      - strength
+      - dexterity
+      - constitution
+      - intelligence
+      - wisdom
+      - charisma
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+forms:
+- choose_check_form
